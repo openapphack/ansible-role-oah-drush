@@ -1,0 +1,22 @@
+---
+dependencies:
+  - oah.git
+  - oah.php
+  - oah.composer
+
+galaxy_info:
+  author: Vinod Panicker
+  description: Drush - command line shell for Drupal
+  company: ""
+  license: "license (BSD, MIT)"
+  min_ansible_version: 2.0
+  platforms:
+  - name: Ubuntu
+    versions:
+    - all
+  - name: Debian
+    versions:
+    - all
+  categories:
+    - development
+    - web
