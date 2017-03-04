@@ -1,0 +1,10 @@
+---
+- src: https://github.com/openapphack/ansible-role-oah-php
+  version: master
+  name: oah.php
+- src: https://github.com/openapphack/ansible-role-oah-composer
+  version: master
+  name: oah.composer
+- src: https://github.com/openapphack/ansible-role-oah-git
+  version: master
+  name: oah.git

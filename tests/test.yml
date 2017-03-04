@@ -1,10 +1,17 @@
 ---
-- hosts: localhost
-  remote_user: root
+- hosts: all
+
   vars:
+    php_enable_webserver: false
     php_opcache_enable: "0"
+
+  pre_tasks:
+      - name: Update apt cache.
+      apt: update_cache=yes cache_valid_time=600
+      when: ansible_os_family == 'Debian'
+
   roles:
     - oah.php
     - oah.composer
     - oah.git
-    - ansible-role-oah-drush
+    - role_under_test
